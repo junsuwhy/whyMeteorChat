@@ -1,0 +1,8 @@
+/* CSS declarations go here */
+body{
+  text-align:center;
+}
+.wrapper{
+  margin:0 auto;
+  float:none
+}

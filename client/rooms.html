@@ -1,0 +1,35 @@
+<template name="rooms">
+  <div class="row">
+  <div class="span8">
+    <h2>Choose 1 Chat Room To Join In.</h2>
+  <!--<form name="new_row">-->
+    <table id="rooms" class="table table-striped span6">
+      <thead>
+        <tr>
+          <th>Room Name</th>
+          <th>Messages Count</th>
+          <th>Last activity</th>
+        </tr>
+      </thead>
+        <tbody>
+        {{#each rooms}}
+          <tr>
+            <td><a href="/rooms/{{_id}}" >{{name}}</a></td>
+            <td>{{count}}</td>
+            <td>{{last_activity}}</td>
+          </tr>
+        {{/each}}
+        <tr>
+          <td colspan="3">
+            <input type="text" id="inputname" name="name" placeholder="Enter your chatroom name"></input>
+            <button id="submitbtn" class="btn btn-primary pull-right">
+              <i class="icon-plus"></i> Create Room
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <!--</form>-->
+</div>
+</div>
+</template>

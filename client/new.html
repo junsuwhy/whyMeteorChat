@@ -1,0 +1,23 @@
+<head>
+  <title>chat</title>
+</head>
+ 
+<body>
+  <div class="wrapper span10">
+  <div>
+    {{loginButtons}}
+    </div>
+
+    {{renderPage}}
+    {{> rooms}}
+  </div>
+</body>
+
+<template name="home">
+  <div class="span8">
+    <h1>Welcome to Meteor Chat</h1>
+    <p>Please a select a room to chat in, or create a new one</p>
+  </div>
+</template>
+
+

@@ -1,0 +1,30 @@
+
+<template name="room">
+  <div class="row">
+  <div class="span8">
+    {{#with room}}
+      <h1>Welcome to {{name}}</h1></p>
+      <table id="chat" class="table table-striped">
+        <tbody>
+          {{#each messages}}
+            <tr>
+              <td>{{author}} :</td>
+              <td>{{text}}</td>
+            </tr>
+          {{/each}}
+          <tr>
+            <td colspan="2">
+              <!--<form name="new_message">-->
+                <input type="text" name="text" id="msgbdy" placeholder="{{hint}}"></input>
+                <button type="submit" class="btn btn-primary pull-right" id="msgbtn">
+                  <i class="icon-envelope"></i> Send message
+                </button>
+              <!--</form>-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    {{/with}}
+  </div>
+</div>
+</template>
